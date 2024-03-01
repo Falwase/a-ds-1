@@ -3,8 +3,12 @@
 
 class Player
 {
+
+protected:
+    string name;
+
 public:
-    char makeMove( );
-    string getName( );
+    virtual char makeMove() = 0;
+    string getName();
 };
 

@@ -1,3 +1,5 @@
 #include "Player.h"
 
-// returns the reference to the winning player
+string Player::getName( ) {
+    return this.name;
+}
