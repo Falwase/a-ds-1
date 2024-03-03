@@ -10,4 +10,6 @@ int main() {
     Player player = Player();
 
     Player comp = Computer();
+
+    return 0;
 };

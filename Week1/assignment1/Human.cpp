@@ -1,8 +1,6 @@
 #include "Human.h"
 #include "Player.h"
 
-#include <string>
-
 Human::Human() {
     name = "Human";
 }
