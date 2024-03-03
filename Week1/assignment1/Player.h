@@ -1,3 +1,6 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include <string>
 #include <iostream>
 
@@ -5,10 +8,11 @@ class Player
 {
 
 protected:
-    string name;
+    std::string name;
 
 public:
     virtual char makeMove() = 0;
-    string getName();
+    std::string getName();
 };
 
+#endif

@@ -1,10 +1,14 @@
+#ifndef HUMAN_H
+#define HUMAN_H
 
 #include "Player.h"
 
-class Player : public Human {
+class Human : public Player {
 
-public::
+public:
     Human();
-    Human(string name);
+    Human(std::string n);
     char makeMove();
-}
+};
+
+#endif

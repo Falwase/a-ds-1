@@ -1,8 +1,13 @@
+#ifndef COMPUTER_H
+#define COMPUTER_H
+
 #include "Player.h"
 
-class Player : public Computer {
+class Computer : public Player {
 
-public::
+public:
     Computer();
     char makeMove();
-}
+};
+
+#endif

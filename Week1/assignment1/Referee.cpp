@@ -3,15 +3,15 @@
 
 Referee::Referee( ) {}; // constructor
 
-Player * Referee::refGame(Player * player1, Player * player2) {
+Player* Referee::refGame(Player * player1, Player * player2) {
     
     char choice = player1->makeMove();
     
-    if (choice == "P") {
+    if (choice == 'P') {
         return player1;
     }
 
-    else if (choice == "S") {
+    else if (choice == 'S') {
         return player2;
     }
 

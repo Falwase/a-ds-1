@@ -1,11 +1,14 @@
 #include "Human.h"
+#include "Player.h"
+
+#include <string>
 
 Human::Human() {
-    this->name = "Human";
+    name = "Human";
 }
 
-Human::Human(string name) {
-    this->name = name;
+Human::Human(std::string n) {
+    name = n;
 }
 
 char Human::makeMove( ) {
