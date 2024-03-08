@@ -1,6 +1,8 @@
 #include "Move.h"
 
 Move::Move(std::string name) {
+
+    //appends strings to matchups set according to selected move
     if (name == "Robot") {
         matchups.insert("Ninja");
         matchups.insert("Zombie");
@@ -38,9 +40,10 @@ std::string Move::getName() {
     return this->moveName;
 }
 
-bool Move::ifWin(std::string opp) {
+//
+bool Move::ifWin(Move* opp) {
     
-    if (matchups.count(opp)) {
+    if (matchups.count(opp->getName())) {
         return true;
     }
 

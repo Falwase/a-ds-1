@@ -10,12 +10,13 @@ private:
     std::string moveName;
 
     //vector contains every move this class beats
+    //add new class by extending if/else sequence in move constructor
     std::unordered_set<std::string> matchups;
     
 public:
     Move(std::string name);
     std::string getName();
-    bool ifWin(std::string opp);
+    bool ifWin(Move* opp);
 };
 
 #endif
