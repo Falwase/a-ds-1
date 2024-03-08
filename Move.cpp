@@ -40,7 +40,7 @@ std::string Move::getName() {
     return this->moveName;
 }
 
-//
+//checks if opponent's move matches any in the matchups set. If so, this player wins.
 bool Move::ifWin(Move* opp) {
     
     if (matchups.count(opp->getName())) {
