@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include "Move.h"
 
 class Player
 {
@@ -11,7 +12,7 @@ protected:
     std::string name;
 
 public:
-    virtual char makeMove() = 0;
+    virtual Move* makeMove() = 0;
     std::string getName();
 };
 

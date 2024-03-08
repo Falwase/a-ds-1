@@ -9,10 +9,10 @@ Human::Human(std::string n) {
     name = n;
 }
 
-char Human::makeMove( ) {
-    char choice;
+Move* Human::makeMove( ) {
+    std::string choice;
     std::cout << "Enter move: ";
     std::cin >> choice;
 
-    return choice;
+    return new Move(choice);
 }

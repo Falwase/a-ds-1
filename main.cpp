@@ -7,9 +7,11 @@ int main() {
 
     Referee r = Referee();
 
-    Player player = Player();
+    Human player = Human();
 
-    Player comp = Computer();
+    Computer comp = Computer();
+
+    r.refGame(&player, &comp);
 
     return 0;
 };
