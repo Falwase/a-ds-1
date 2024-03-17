@@ -1,10 +1,9 @@
 
 #include <iostream>
-#include "Truckloads.h" 
-#include <cmath>
+#include "Reverser.h"
 
 int main() {
 
-    Truckloads t = Truckloads();
-    std::cout << t.numTrucks(1024, 5) << std::endl;
+    Reverser r = Reverser();
+    std::cout << r.reverseString("racecar")<< std::endl;
 }
