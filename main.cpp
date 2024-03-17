@@ -1,17 +1,9 @@
-#include "Referee.h"
-#include "Computer.h"
-#include "Human.h"
-#include "Player.h"
+
+#include <iostream>
+#include "Reverser.h"
 
 int main() {
 
-    Referee r = Referee();
-
-    Human player = Human();
-
-    Computer comp = Computer();
-
-    r.refGame(&player, &comp);
-
-    return 0;
-};
+    Reverser r = Reverser();
+    std::cout << r.reverseString("racecar")<< std::endl;
+}
