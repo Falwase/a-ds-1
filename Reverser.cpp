@@ -28,7 +28,7 @@ int Reverser::reverseDigit(int value) {
 string Reverser::reverseString(string characters) {
 
     if (characters.length() < 0) {
-        return "ERROR"
+        return "ERROR";
     }
 
     if (characters.length() <= 1) {
