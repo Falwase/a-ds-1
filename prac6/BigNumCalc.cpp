@@ -62,6 +62,7 @@ std::list<int> BigNumCalc::add(std::list<int> num1, std::list<int> num2) {
         }
     }
 
+    sum.reverse();
     return sum;
 }
 
@@ -92,7 +93,6 @@ std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2) {
         if(digit < 0) {
             it1++;
             *it1 = *it1 - 1;
-            std::cout << *it1 << std::endl;
             it1--;
             digit += 10;
         }
@@ -111,6 +111,7 @@ std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2) {
         }
     }
 
+    diff.reverse();
     return diff;
 }
 
@@ -144,5 +145,6 @@ std::list<int> BigNumCalc::mul(std::list<int> num1, std::list<int> num2) {
         }
     }
 
+    mult.reverse();
     return mult;
 }
